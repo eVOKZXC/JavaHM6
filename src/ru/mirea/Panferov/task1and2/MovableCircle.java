@@ -12,25 +12,25 @@ public class MovableCircle implements Movable{
     @Override
     public void moveUp() {
         System.out.println("Движение вверх на " + center.ySpeed);
-        center.y += center.ySpeed;
+        center.moveUp();
     }
 
     @Override
     public void moveDown() {
         System.out.println("Движение вниз на " + center.ySpeed);
-        center.y -= center.ySpeed;
+        center.moveDown();
     }
 
     @Override
     public void moveLeft() {
         System.out.println("Движение влево на " + center.xSpeed);
-        center.x -= center.xSpeed;
+        center.moveLeft();
     }
 
     @Override
     public void moveRight() {
         System.out.println("Движение право на " + center.xSpeed);
-        center.x += center.xSpeed;
+        center.moveRight();
     }
 
     @Override

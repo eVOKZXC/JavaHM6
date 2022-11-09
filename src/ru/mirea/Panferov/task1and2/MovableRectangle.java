@@ -21,29 +21,29 @@ public class MovableRectangle implements Movable{
     @Override
     public void moveUp() {
         System.out.println("Движение вверх на " + bottomRight.ySpeed);
-        bottomRight.y += bottomRight.ySpeed;
-        topLeft.y += topLeft.ySpeed;
+        bottomRight.moveUp();
+        topLeft.moveUp();
     }
 
     @Override
     public void moveDown() {
         System.out.println("Движение вниз на " + bottomRight.ySpeed);
-        bottomRight.y -= bottomRight.ySpeed;
-        topLeft.y -= topLeft.ySpeed;
+        bottomRight.moveDown();
+        topLeft.moveDown();
     }
 
     @Override
     public void moveLeft() {
         System.out.println("Движение влево на " + bottomRight.xSpeed);
-        bottomRight.x -= bottomRight.xSpeed;
-        topLeft.x -= topLeft.xSpeed;
+        bottomRight.moveLeft();
+        topLeft.moveLeft();
     }
 
     @Override
     public void moveRight() {
         System.out.println("Движение вправо на " + bottomRight.xSpeed);
-        bottomRight.x += bottomRight.xSpeed;
-        topLeft.x += topLeft.xSpeed;
+        bottomRight.moveRight();
+        topLeft.moveRight();
     }
 
     @Override
